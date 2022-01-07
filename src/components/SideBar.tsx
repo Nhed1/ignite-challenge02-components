@@ -1,4 +1,4 @@
-export function SideBar() {
+export function SideBar(genres, handleClickButton, selectedGenreId) {
   // Complete aqui
   return (
   <nav className="sidebar">

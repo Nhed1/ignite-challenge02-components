@@ -1,4 +1,4 @@
-export function Content() {
+export function Content(selectedGenre, movies) {
   // Complete aqui
   return(
     <div className="container">
