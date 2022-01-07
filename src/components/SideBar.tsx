@@ -1,4 +1,13 @@
-export function SideBar(genres, handleClickButton, selectedGenreId) {
+import { Button } from './Button';
+
+interface SideBarProps {
+  genres: Array<any>;
+  handleClickButton: Function;
+  selectedGenreId: number;
+}
+
+
+export function SideBar({genres, handleClickButton, selectedGenreId}: SideBarProps) {
   // Complete aqui
   return (
   <nav className="sidebar">

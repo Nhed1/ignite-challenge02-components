@@ -1,4 +1,11 @@
-export function Content(selectedGenre, movies) {
+import { MovieCard } from './MovieCard';
+
+interface ContentProps {
+  selectedGenre: {title: string};
+  movies: Array<any>
+}
+
+export function Content({selectedGenre, movies}: ContentProps) {
   // Complete aqui
   return(
     <div className="container">

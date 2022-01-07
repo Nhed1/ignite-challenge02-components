@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import { Button } from './components/Button';
-import { MovieCard } from './components/MovieCard';
 
 import { SideBar } from './components/SideBar';
 import { Content } from './components/Content';
@@ -60,7 +58,7 @@ export function App() {
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <SideBar 
       genres={genres} 
-      clickButton={handleClickButton}
+      handleClickButton={handleClickButton}
       selectedGenreId={selectedGenreId}></SideBar>
       <Content
       selectedGenre={selectedGenre}
