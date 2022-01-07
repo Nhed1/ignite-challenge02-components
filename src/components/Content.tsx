@@ -1,8 +1,19 @@
 import { MovieCard } from './MovieCard';
 
-interface ContentProps {
-  selectedGenre: {title: string};
-  movies: Array<any>
+interface ContentProps { 
+  selectedGenre: {
+    title: string
+  };
+  movies: {
+    imdbID: string;
+    Title: string;
+    Poster: string;
+    Ratings: Array<{
+      Source: string;
+      Value: string;
+    }>;
+    Runtime: string;
+}
 }
 
 export function Content({selectedGenre, movies}: ContentProps) {
