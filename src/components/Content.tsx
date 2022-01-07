@@ -13,7 +13,7 @@ interface ContentProps {
       Value: string;
     }>;
     Runtime: string;
-}
+}[]
 }
 
 export function Content({selectedGenre, movies}: ContentProps) {
